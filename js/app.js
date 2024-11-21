@@ -115,8 +115,6 @@ class Game {
                 break 
             }
         }
-
-        // pick up here if(gameWon)
     }
 
 }
