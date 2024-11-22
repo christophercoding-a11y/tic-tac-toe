@@ -115,6 +115,25 @@ class Game {
                 break 
             }
         }
+
+        // pick up here if(gameWon)
+    }
+
+    if (gameWon) {
+
+        const tallyMark ='x'
+        this.winningMessage()
+        const winner = this.currentPlayer
+
+        if (winner = 'X') {
+            this.win.count.x = this.winCount.x +1
+            this.xWins.innerHTML += `<span class="tally"> ${tallyMark}<span>`
+        } else {
+            thisWinCount.x = this.winCount.o + 1
+            this.xWins.innerHTML += `<span class="tally"> ${tallyMark}<span>`
+        }
+        this.checkWinCount()
+        this.gameActive = false
     }
 
 }
